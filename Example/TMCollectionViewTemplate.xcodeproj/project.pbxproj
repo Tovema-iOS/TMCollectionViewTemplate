@@ -24,6 +24,9 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		D00171FE235083C900C715FB /* CollectionViewIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D00171F8235083C900C715FB /* CollectionViewIconCell.m */; };
+		D00171FF235083C900C715FB /* TestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D00171FA235083C900C715FB /* TestCollectionViewController.m */; };
+		D0017200235083C900C715FB /* CollectionViewRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D00171FC235083C900C715FB /* CollectionViewRowCell.m */; };
 		D033BD3922C1CBE3003F174E /* BaseTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D033BD3722C1CBE3003F174E /* BaseTestViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -62,13 +65,19 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84E152A4A26F1CC128F2EBAD /* Pods-TMCollectionViewTemplate_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMCollectionViewTemplate_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TMCollectionViewTemplate_Tests/Pods-TMCollectionViewTemplate_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9019213973595363F578B7C6 /* TMCollectionViewTemplate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TMCollectionViewTemplate.podspec; path = ../TMCollectionViewTemplate.podspec; sourceTree = "<group>"; };
+		9019213973595363F578B7C6 /* TMCollectionViewTemplate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TMCollectionViewTemplate.podspec; path = ../TMCollectionViewTemplate.podspec; sourceTree = "<group>"; };
 		9BB825C0AC97877F964D3B28 /* Pods_TMCollectionViewTemplate_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMCollectionViewTemplate_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2656EEE63E78A3592D9DCD2 /* Pods_TMCollectionViewTemplate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMCollectionViewTemplate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00171F8235083C900C715FB /* CollectionViewIconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewIconCell.m; sourceTree = "<group>"; };
+		D00171F9235083C900C715FB /* CollectionViewIconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewIconCell.h; sourceTree = "<group>"; };
+		D00171FA235083C900C715FB /* TestCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCollectionViewController.m; sourceTree = "<group>"; };
+		D00171FB235083C900C715FB /* CollectionViewRowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewRowCell.h; sourceTree = "<group>"; };
+		D00171FC235083C900C715FB /* CollectionViewRowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewRowCell.m; sourceTree = "<group>"; };
+		D00171FD235083C900C715FB /* TestCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCollectionViewController.h; sourceTree = "<group>"; };
 		D033BD3722C1CBE3003F174E /* BaseTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTestViewController.m; sourceTree = "<group>"; };
 		D033BD3822C1CBE3003F174E /* BaseTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTestViewController.h; sourceTree = "<group>"; };
-		DD43654A5BA28999214AA80A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E3E511A9ED88369D632F59FD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DD43654A5BA28999214AA80A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E3E511A9ED88369D632F59FD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FB858C1124B681F90BB8EA21 /* Pods-TMCollectionViewTemplate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMCollectionViewTemplate_Example.debug.xcconfig"; path = "Target Support Files/Pods-TMCollectionViewTemplate_Example/Pods-TMCollectionViewTemplate_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +150,12 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* TMViewController.h */,
 				6003F5A6195388D20070C39A /* TMViewController.m */,
+				D00171FD235083C900C715FB /* TestCollectionViewController.h */,
+				D00171FA235083C900C715FB /* TestCollectionViewController.m */,
+				D00171F9235083C900C715FB /* CollectionViewIconCell.h */,
+				D00171F8235083C900C715FB /* CollectionViewIconCell.m */,
+				D00171FB235083C900C715FB /* CollectionViewRowCell.h */,
+				D00171FC235083C900C715FB /* CollectionViewRowCell.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -206,7 +221,6 @@
 				84E152A4A26F1CC128F2EBAD /* Pods-TMCollectionViewTemplate_Tests.debug.xcconfig */,
 				4DC2309A70C5A4B846C3F886 /* Pods-TMCollectionViewTemplate_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -359,10 +373,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TMCollectionViewTemplate_Example/Pods-TMCollectionViewTemplate_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/TMCollectionViewTemplate/TMCollectionViewTemplate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TMCollectionViewTemplate.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,6 +397,9 @@
 				6003F5A7195388D20070C39A /* TMViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				D033BD3922C1CBE3003F174E /* BaseTestViewController.m in Sources */,
+				D00171FF235083C900C715FB /* TestCollectionViewController.m in Sources */,
+				D00171FE235083C900C715FB /* CollectionViewIconCell.m in Sources */,
+				D0017200235083C900C715FB /* CollectionViewRowCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

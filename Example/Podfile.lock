@@ -1,0 +1,23 @@
+PODS:
+  - Masonry (1.1.0)
+  - TMCollectionViewTemplate (0.1.0)
+
+DEPENDENCIES:
+  - Masonry
+  - TMCollectionViewTemplate (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Masonry
+
+EXTERNAL SOURCES:
+  TMCollectionViewTemplate:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  TMCollectionViewTemplate: 2b47119fbef9225cbcc6f994bff949cffe3b709b
+
+PODFILE CHECKSUM: 68968c5ddd2ccf2bc67f0af419f6353e8425725c
+
+COCOAPODS: 1.8.3

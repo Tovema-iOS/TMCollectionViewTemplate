@@ -7,6 +7,7 @@
 //
 
 #import "TMViewController.h"
+#import "TestCollectionViewController.h"
 
 @interface TMViewController ()
 
@@ -18,7 +19,7 @@
 {
     [super viewDidLoad];
     
-#if 0
+#if 1
 #warning 测试
     self.autoClickIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
 #endif
@@ -34,8 +35,11 @@
 
 - (TestSection *)createTestSection {
     NSMutableArray<TestCell *> *array = [NSMutableArray array];
+    
+    __weak typeof(self) weakSelf = self;
     [array addObject:[TestCell cellWithTitle:@"Test" operation:[NSBlockOperation blockOperationWithBlock:^{
-        NSLog(@"Hello Pod");
+        TestCollectionViewController *ctrl = [[TestCollectionViewController alloc] init];
+        [weakSelf.navigationController pushViewController:ctrl animated:YES];
     }]]];
     
     return [TestSection sectionWithTitle:@"Test" items:array];

@@ -6,6 +6,7 @@ platform :ios, '8.0'
 
 target 'TMCollectionViewTemplate_Example' do
   pod 'TMCollectionViewTemplate', :path => '../'
+  pod 'Masonry'
 
   target 'TMCollectionViewTemplate_Tests' do
     inherit! :search_paths

@@ -1,15 +1,10 @@
 # TMCollectionViewTemplate
 
-[![CI Status](https://img.shields.io/travis/lxb_0605@qq.com/TMCollectionViewTemplate.svg?style=flat)](https://travis-ci.org/lxb_0605@qq.com/TMCollectionViewTemplate)
-[![Version](https://img.shields.io/cocoapods/v/TMCollectionViewTemplate.svg?style=flat)](https://cocoapods.org/pods/TMCollectionViewTemplate)
-[![License](https://img.shields.io/cocoapods/l/TMCollectionViewTemplate.svg?style=flat)](https://cocoapods.org/pods/TMCollectionViewTemplate)
-[![Platform](https://img.shields.io/cocoapods/p/TMCollectionViewTemplate.svg?style=flat)](https://cocoapods.org/pods/TMCollectionViewTemplate)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+计算自动布局的 UICollectionViewCell size，内部处理 size 缓存。
 
 ## Requirements
+
+iOS 8.0
 
 ## Installation
 
@@ -17,14 +12,42 @@ TMCollectionViewTemplate is available through [CocoaPods](https://cocoapods.org)
 it, simply add the following line to your Podfile:
 
 ```ruby
-source 'https://github.com/Tovema-iOS/Specs.git'
-source 'https://github.com/CocoaPods/Specs.git'
-pod 'TMCollectionViewTemplate', '~> 0.1.0'
+pod 'TMCollectionViewTemplate', '~> 1.0'
 ```
+
+## Usage
+
+``` Objective-C
+#import <TMCollectionViewTemplate/TMCollectionViewTemplate.h>
+
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        return [collectionView tm_heightForCellWithIdentifier:CollectionViewRowCell.reuseIdentifier
+            indexPath:indexPath
+              maxSize:CollectionViewRowCell.maxCellSize
+        configuration:^(CollectionViewIconCell *cell){
+
+        }];
+    } else {
+        return [collectionView tm_heightForCellWithIdentifier:CollectionViewIconCell.reuseIdentifier
+            indexPath:indexPath
+              maxSize:CollectionViewIconCell.maxCellSize
+        configuration:^(CollectionViewIconCell *cell){
+
+        }];
+    }
+}
+```
+
+效果预览：
+
+![效果预览](Preview/1.png)
 
 ## Author
 
-lxb_0605@qq.com, lxb_0605@qq.com
+lxb_0605@qq.com
 
 ## License
 
